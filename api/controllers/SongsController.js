@@ -48,7 +48,7 @@ module.exports = {
   },
   filterSongs:  async (req, res) => {   	  	// searching for song
   	try {
-  		const {nameContains} = req.query;
+  		const {nameContains} = req.params;
   		const songs = await Songs.find({ 
   			name: { contains: nameContains } 
   		});  		
@@ -92,7 +92,7 @@ module.exports = {
   	try {
   		const {id} = req.params;   		
   		const {name, url, lyric} = req.body;  		  		
-      	let foundSong = await Products.findOne({id});  		
+      	let foundSong = await Songs.findOne({id});  		
       	if (foundSong == null) {
       		res.json({
   				result: "failed",  			
@@ -108,7 +108,7 @@ module.exports = {
   		}).fetch();  		
   		res.json({
       		result: "ok",
-      		message: "Update a product successfully",
+      		message: "Update a song successfully",
       		data: foundSong
       	});
   		

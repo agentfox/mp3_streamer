@@ -27,8 +27,18 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
-  'post /upload/song': 'SongsController.addSong',
-  
+  'post /songs/upload': 'SongsController.addSong',
+  'get /songs/search/:nameContains': 'SongsController.filterSongs',
+  'get /songs/play/:id' : 'SongsController.findOne',
+  'put /songs/edit/:id' : 'SongsController.updateSong',
+  'delete /songs/delete/:id' : 'SongsController.deleteSong',
+
+  'post /singers/upload': 'SingersController.addSinger',
+  'get /singers/search/:nameContains': 'SingersController.filterSingers',
+  'get /singers/play/:id' : 'SingersController.findOne',
+  'put /singers/edit/:id' : 'SingersController.updateSinger',
+  'delete /singers/delete/:id' : 'SingersController.deleteSinger',
+
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
