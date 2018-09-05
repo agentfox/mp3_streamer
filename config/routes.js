@@ -27,7 +27,8 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
-
+  'post /upload/song': 'SongsController.addSong',
+  
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

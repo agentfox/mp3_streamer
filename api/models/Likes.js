@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+    type : 'number',
 
     user : {
       model : 'users'

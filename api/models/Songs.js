@@ -19,14 +19,14 @@ module.exports = {
       unique : true
     },
     uploader : { 
-      model : 'user'
+      model : 'users'
     },
     comments : {
       collection : 'comments',
       via : 'song'
     },
     plays : {
-      type : 'integer', 
+      type : 'number', 
     },
     likes : {
       collection : 'likes',
