@@ -16,11 +16,17 @@ module.exports = {
       type : 'string'
     },
     albums : {
+      type : 'array',
       collection : 'albums',
       via : 'singer'
     },
     url_img : {
       type : 'string'
+    },
+    songs : {
+      type : 'array',
+      collection : 'songs',
+      via : 'singers'
     }
 
   },

@@ -9,8 +9,20 @@ module.exports = {
   addSong:  async (req, res) => {   	  // add song	
   	try {
   		console.log("addSong");
-  		const {name, url, lyric} = req.body;  		
-  		const newSong = await Songs.create({name, url, lyric}).fetch();  		
+		  const {name, url, lyric,singers} = req.body;  		
+		  const newSong = await Songs.create({name, url, lyric,singers}).fetch();
+		  for(let a in singers) {
+			let foundSinger = await Singers.findOne({id:a});  		
+            if (foundSinger !== null) {
+				foundSinger = await Singers.update({id:a}, {
+					name: 	name != null ? name : foundSinger.name, 
+					description: 		description != null ? description : foundSinger.description, 
+					url_img: 	url_img != null ? url_img : foundSinger.url_img, 
+	  
+				}).fetch();
+            }      	      	
+  
+		  }  		
   		res.json({
       		result: "ok",
       		message: "Create new song successfully",
@@ -91,7 +103,7 @@ module.exports = {
   updateSong:  async (req, res) => {//Open "Edit Song form"   	  	
   	try {
   		const {id} = req.params;   		
-  		const {name, url, lyric} = req.body;  		  		
+  		const {name, url, lyric,singers} = req.body;  		  		
       	let foundSong = await Songs.findOne({id});  		
       	if (foundSong == null) {
       		res.json({
@@ -103,7 +115,8 @@ module.exports = {
   		foundSong = await Songs.update({id}, {
   			name: 	name != null ? name : foundSong.name, 
   			url: 		url != null ? url : foundSong.url, 
-  			lyric: 	lyric != null ? lyric : foundSong.lyric, 
+			lyric: 	lyric != null ? lyric : foundSong.lyric, 
+			singers: 	singers != null ? singers : foundSong.singers, 
 
   		}).fetch();  		
   		res.json({

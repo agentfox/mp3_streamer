@@ -22,6 +22,7 @@ module.exports = {
       model : 'users'
     },
     comments : {
+      type : 'array',
       collection : 'comments',
       via : 'song'
     },
@@ -29,6 +30,7 @@ module.exports = {
       type : 'number', 
     },
     likes : {
+      type : 'number',
       collection : 'likes',
       via : 'song'
     },
@@ -36,6 +38,7 @@ module.exports = {
       type : 'string'
     },
     genres : {
+      type : 'array',
       collection : 'genres',
       via : 'songs'
     },
@@ -43,7 +46,13 @@ module.exports = {
       model : 'albums'
     },
     playlists : {
+      type : 'array',
       collection : 'playlists',
+      via : 'songs'
+    },
+    singers : {
+      type : 'array',
+      collection : 'singers',
       via : 'songs'
     }
 

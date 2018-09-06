@@ -1,6 +1,13 @@
 /**
  * SingersController
- *
+ *{
+	"name" : "ten bai hat 1",
+	"url"  : "url bai hat 1",
+	"lyric" : "lyric 1",
+	"singers" : [
+		"5b90f50edda0a810f1216a21","5b90f500dda0a810f1216a20"
+		]
+}
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
@@ -10,7 +17,8 @@ module.exports = {
         try {
             console.log("addSinger");
             const {name, description, url_img} = req.body;  		
-            const newSinger = await Singers.create({name, description, url_img}).fetch();  		
+            const newSinger = await Singers.create({name, description, url_img}).fetch(); 
+             		
             res.json({
                 result: "ok",
                 message: "Create new Singer successfully",
