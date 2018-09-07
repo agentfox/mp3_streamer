@@ -53,9 +53,9 @@ module.exports = {
       collection : 'comments',
       via : 'comment_owner'
     },
-    likes : {
-      collection : 'likes',
-      via : 'user'
+    songsliked : {
+      collection : 'songs',
+      via : 'usersLiked'
     }
   },
 

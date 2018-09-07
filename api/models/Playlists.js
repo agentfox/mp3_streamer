@@ -12,9 +12,8 @@ module.exports = {
     playlist_owner : {
       model : 'users'
     },
-    songs : {
-      collection : 'songs',
-      via : 'playlists'
+    songs : {   // song belongto this list
+      model : 'songs'
     }
   },
 

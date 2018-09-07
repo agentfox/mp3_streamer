@@ -22,36 +22,27 @@ module.exports = {
       model : 'users'
     },
     comments : {
-      type : 'array',
       collection : 'comments',
       via : 'song'
     },
     plays : {
       type : 'number', 
     },
-    likes : {
-      type : 'number',
-      collection : 'likes',
-      via : 'song'
+    usersLiked : {
+      collection : 'users',
+      via : 'songsliked'
     },
     lyric : {
       type : 'string'
     },
     genres : {
-      type : 'array',
       collection : 'genres',
       via : 'songs'
     },
     album : {
       model : 'albums'
     },
-    playlists : {
-      type : 'array',
-      collection : 'playlists',
-      via : 'songs'
-    },
     singers : {
-      type : 'array',
       collection : 'singers',
       via : 'songs'
     }
