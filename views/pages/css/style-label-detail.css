@@ -1,0 +1,538 @@
+
+/* Content detail */
+
+.content {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.detail-song-wrap {
+    padding: 0;
+    font-size: 95%;
+}
+
+.detail-song {
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-song-left img {
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-song-nav {
+    font-size: 80%;
+    color: #666;
+    margin: 0;
+}
+
+.detail-song-name {
+    font-size: 200%;
+    color: #fff;
+}
+
+p.artist {
+    display: inline-block;
+    color: #666;
+}
+
+a.artist {
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+p.release-date {
+    color: #555;
+    display: inline-block;
+}
+
+span.release-date {
+    margin-left: 5px;
+    color: #fff;
+}
+
+p.labels {
+    color: #555;
+    display: inline-block;
+}
+
+a.labels {
+    margin-left: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.detail-song-play {
+    padding: 1px 3px;
+    display: inline-block;
+    float: left;
+    border: 0;
+    background: #666;
+    color: #eee;
+}
+
+.detail-song-play .glyphicon-pause {
+    display: none;
+}
+
+.detail-song-play i {
+    margin: 0;
+    font-size: 120%;
+    margin: 3px 5px;
+}
+
+.detail-song-buy {
+    padding: 0;
+    border: 0;
+    background: #ee5380;
+    color: #fff;
+}
+
+.detail-song-buy p {
+    display: inline-block;
+    margin: 0;
+    padding: 3px 15px;
+}
+
+.descrip-title {
+    color: #666;
+}
+
+.detail-song-descrip {}
+
+#descrip-detail {
+    color: #eee;
+}
+
+.detail-song-more {
+    color: #55e;
+    cursor: pointer;
+}
+
+.detail-song-less {
+    color: #55e;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* end content detail */
+
+
+/* track total */
+
+.detail-song-track-total {
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.detail-song-track-total-title {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 150%;
+    width: 100%;
+}
+
+.detail-song-track-total ul {
+    list-style: none;
+    margin: 20px 15px 0 15px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-song-row-title {
+    color: #fff;
+    border-top: 1px solid #505050;
+}
+
+.detail-song-track-total li {
+    display: inline-block;
+    width: 100%;
+    background: #2a2a2a;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-song-track-total li .col-sm-12 div {
+    padding: 0;
+    padding-left: 0.5%;
+}
+
+.detail-song-track-total li .col-sm-12 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.detail-song-track-total li .col-sm-12 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-song-track-total li:first-child {
+    background: transparent;
+}
+
+.detail-song-track-total-col-play span {
+    display: inline-block;
+    width: 30%;
+    font-size: 120%;
+    color: #eee;
+}
+
+.detail-song-track-total-col-play button {
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 40%;
+}
+
+.detail-song-track-total-col-name {
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-name a {
+    color: #fff;
+}
+
+.detail-song-track-total-col-artist {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-artist a {
+    color: #22bbdd;
+}
+
+.detail-song-track-total-col-remixer {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-remixer a {
+    color: #2bd;
+}
+
+.detail-song-track-total-col-genre {
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-genre a {
+    color: #aaa;
+}
+
+.detail-song-track-total-col-bpm {
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-key {
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-length {
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail-song-track-total-col-cost button {
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(240, 70, 110, 0.5);
+    color: #eee;
+}
+
+
+/*  end track total */
+
+
+/* More from this artist */
+
+.more-song-artist {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.more-song-artist-title {
+    margin: 0 30px 20px 30px;
+    font-size: 150%;
+    color: #fff;
+}
+
+.more-song-artist-detail {
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.more-song-artist-detail .col-sm-12 {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.more-song-artist-detail .col-sm-2 {
+    padding: 0;
+    padding-right: 10px;
+}
+
+.more-song-artist-detail .col-sm-2 p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #000;
+    padding-right: 10px;
+    opacity: 0.8;
+}
+
+.more-song-artist-detail{
+    display: none;
+}
+
+.more-song-artist-active{
+    display: block;
+}
+
+.more-song-artist-detail img {
+    width: 100%;
+}
+
+.more-song-artist-song{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.more-song-artist-song a{
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.more-song-artist-artist{
+    widows: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.more-song-artist-artist a{
+    color: #22ccee;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.more-song-artist-label{
+    width: 100%;
+}
+
+.more-song-artist-label a{
+    color: #888;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.more-song-artist-pages{
+    width: 100%;
+    padding: 0 15px 0 30px;
+}
+
+.more-song-artist-pages ul{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.more-song-artist-pages-li {
+    display: inline-block;
+    float: left;
+    border: 0;
+    height: 5px;
+    margin-right: 0.5%;
+    width: 33%;
+    background: #005522;
+    cursor: pointer;
+}
+
+.more-song-artist-pages-li:last-child{
+    margin-right: 0;
+}
+
+.more-song-artist-pages-li-active {
+    background: #fff;
+}
+
+/* end more this from artist */
+
+/* more this from label */
+
+.more-song-label {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.more-song-label-title {
+    margin: 0 30px 20px 30px;
+    font-size: 150%;
+    color: #fff;
+}
+
+.more-song-label-detail {
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.more-song-label-detail .col-sm-12 {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.more-song-label-detail .col-sm-2 {
+    padding: 0;
+    padding-right: 10px;
+}
+
+.more-song-label-detail{
+    display: none;
+}
+
+.more-song-label-active{
+    display: block;
+}
+
+.more-song-label-detail img {
+    width: 100%;
+}
+
+.more-song-label-song{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.more-song-label-song a{
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.more-song-label-artist{
+    widows: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.more-song-label-artist a{
+    color: #22ccee;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.more-song-label-label{
+    width: 100%;
+}
+
+.more-song-label-label a{
+    color: #888;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.more-song-label-pages{
+    width: 100%;
+    padding: 0 15px 0 30px;
+}
+
+.more-song-label-pages ul{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.more-song-label-pages-li {
+    display: inline-block;
+    float: left;
+    border: 0;
+    height: 5px;
+    margin-right: 0.5%;
+    width: 33%;
+    background: #005522;
+    cursor: pointer;
+}
+
+.more-song-label-pages-li:last-child{
+    margin-right: 0;
+}
+
+.more-song-label-pages-li-active {
+    background: #fff;
+}
+
+
+/* start */
+
+.label-genres p{
+    display: inline-block;
+}
+
+.label-genres a{
+    text-decoration: none;
+    color: #eee;
+}
+
+/* end start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

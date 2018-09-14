@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/style-listen.css">
+    <title>Listen - Beatport</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="./img/icon/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-left">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">Store</a></li>
+                                <li class="active"><a href="#contact">Listen</a></li>
+                                <li><a href="#contact">Shows</a></li>
+                                <li><a href="#contact">Video</a></li>
+                                <li><a href="#contact">News</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login pull-right">
+                                <li><a href="#" id="login-button">Login</a></li>
+                                <li><a href="#" id="register-button">Register</a></li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="login-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>Login</h1>
+                    <form>
+                        <label for="email-form">Email</label>
+                        <input type="email" placeholder="Email" class="form-element" id="email-form">
+                        <label for="password-form">Password</label>
+                        <input type="password" placeholder="Password" class="form-element" id="password-form">
+                        <input type="checkbox" id="remember-me" value="Forget password">
+                        <label for="remember-me">Remember me</label>
+                        <br>
+                        <div class="login-form-button-group">
+                            <input type="button" id="button-me-login" class="button-me" value="Login">
+                            <input type="button" id="button-me-cancel" class="button-me" value="Cancel">
+                        </div>
+
+                        <p><a href="#">Fogotten Password</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="container">
+            <ul class="genres-search">
+                <li><a href="#" id="genres-button">GENRES
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </a>
+                </li>
+                <form class="form-search">
+                    <input type="text" placeholder="search">
+                    <button type="button"><i class="glyphicon glyphicon-search"></i></button>
+                </form>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="genres-warp">
+        <div id="content">
+            <ul class="genres-list">
+                <li>
+                    <p>CHILL</p>
+                    <ul>
+                        <li><a href="#">Electronica / Chill Out</a></li>
+                        <li><a href="#">DeepHouse</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>GROOVE</p>
+                    <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Indre Dance / Nu Disco</a></li>
+                        <li><a href="#">Foture House</a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <p>MOVE</p>
+                    <ul>
+                        <li><a href=""> Tech House</a></li>
+                        <li><a href=""> Techno</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>ELEVATE</p>
+                    <ul>
+                        <li><a href="">Big Room</a></li>
+                        <li><a href="">Trance</a></li>
+                        <li><a href="">Hardstyle</a></li>
+                        <li><a href="">Psy-Trance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>BOUNCE</p>
+                    <ul>
+                        <li><a href=""> Bass</a></li>
+                        <li><a href="">Drum & Bass</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="content-margin">
+            <div class="content-left">
+                <div class="slider">
+                    <a href="#">
+                        <img src="./img/img-listen/img-start.jpg" alt="">
+                    </a>
+                </div>
+                <div class="daily-rotation">
+                    <p class="daily-rotation-title"> DAILY-ROTATIAN</p>
+                    <div class="daily-rotation-content">
+                        <ul class="daily-rotation-content">
+                            <li>
+                                <a href="#">
+                                    <img src="./img/img-listen/img-between1.jpg" alt=""> </a>
+                                <a href="">3 Rules - Tiga</a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/img-listen/img-between2.jpg" alt="">
+                                </a>
+                                <a href="">Pop It Off - Ookay, YDG</a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/img-listen/img-between3.jpg" alt="">
+                                </a>
+                                <a href="">Power - Fatima Al Quadiri</a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/img-listen/img-between4.jpg" alt="">
+                                </a>
+                                <a href="">Delta Trippin - DJ Sneak, Ricardo Villa</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="list-title">
+                    <a href="#" id="The Pulse Chart">The  Pulse  Chart </a>
+                    <br>
+                    <a href="#" id="Beat-now">What's popular on Beatport right now</a>
+                </div>
+                <div class="top-video">
+                    <div stt="0" class="video">
+                        <a href="#">
+                            <img src="./img/img-top-left/Arcade.jpg" alt="">
+                            <i stt="0" class="glyphicon glyphicon-play"></i>
+                            <div stt="0" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Arcade</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Dimitrix, </a></li>
+                            <li class="author-video"><a href="#">Like Mike</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="1" class="video">
+                        <a href="#">
+                            <img src="./img/img-top-left/Bedroom.jpg" alt="">
+                            <i stt="1" class="glyphicon glyphicon-play"></i>
+                            <div stt="1" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Bedroom Stories</a></li>
+                            <br>
+                            <li class="author-video"><a href="#"> Grek, </a></li>
+                            <li class="author-video"><a href="#"> Hassio</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="2" class="video">
+                        <a href="#"><img src="./img/img-top-left/Chaos.jpg" alt="">
+                            <i stt="2" class="glyphicon glyphicon-play"></i>
+                            <div stt="2" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Chaos</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">STAMEN</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="3" class="video">
+                        <a href="#"><img src="./img/img-top-left/LightsOut.jpg" alt="">
+                            <i stt="3" class="glyphicon glyphicon-play"></i>
+                            <div stt="3" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Lights Out</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Zomboy</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="4" class="video">
+                        <a href="#"><img src="./img/img-top-left/Only.jpg" alt="">
+                            <i stt="4" class="glyphicon glyphicon-play"></i>
+                            <div stt="4" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">You're Only</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Blonde Redhead, </a></li>
+                            <li class="author-video"><a href="#">Lele Sacchi</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="5" class="video">
+                        <a href="#"><img src="./img/img-top-left/Overnight.jpg" alt="">
+                            <i stt="5" class="glyphicon glyphicon-play"></i>
+                            <div stt="5" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Overnight Sensationt</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">AFFKT, </a></li>
+                            <li class="author-video"><a href="#"> Miguel Bastida</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="6" class="video">
+                        <a href="#"><img src="./img/img-top-left/RunWild.jpg" alt="">
+                            <i stt="6" class="glyphicon glyphicon-play"></i>
+                            <div stt="6" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Run Wild feat. Jake Reese</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Hardwell , </a></li>
+                            <li class="author-video"><a href="#">Jake Reese</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="7" class="video">
+                        <a href="#"><img src="./img/img-top-left/Sweet.jpg" alt="">
+                            <i stt="7" class="glyphicon glyphicon-play"></i>
+                            <div stt="7" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Sweet &Sour</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Mike Wiliam</a></li>
+                        </ul>
+                    </div>
+
+                    <div stt="8" class="video">
+                        <a href="#"><img src="./img/img-top-left/Tonight.jpg" alt="">
+                            <i stt="8" class="glyphicon glyphicon-play"></i>
+                            <div stt="8" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Tonight</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Don Diablo</a></li>
+                        </ul>
+                    </div>
+                    <div stt="9" class="video">
+                        <a href="#"><img src="./img/img-top-left/Utopia.jpg" alt="">
+                            <i stt="9" class="glyphicon glyphicon-play"></i>
+                            <div stt="9" class="video-extra"></div>
+                        </a>
+                        <ul>
+                            <li class="name-video"><a href="#">Utopia</a></li>
+                            <br>
+                            <li class="author-video"><a href="#">Carl Cox</a> </li>
+                            <li class="author-video"><a href="#"> Jon Rundell</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footder">
+        <div class="footder-margin">
+            <div class="footder-left">
+                <div class="NewOnBeat">
+                    <div class="title">
+                        <p class="footder-title"> NEW ON BEATPORT</p>
+                        <form>
+                            <i class="glyphicon glyphicon-play"></i>
+                            <input type="button" value="Play all">
+                        </form>
+                    </div>
+                                                    <hr>
+                    <div class="NewOnBeat-content">
+                        <div class="top-new">
+
+                            <div stt="0" class="newvideo">
+                                <a href="#">
+                                    <img src="./img/img-footder/Alpine.jpg" alt="">
+                                    <i stt="0" class="glyphicon glyphicon-play"></i>
+                                    <div stt="0" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#">Alpine  Evening</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">The Orb</a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="1" class="newvideo">
+                                <a href="#">
+                                    <img src="./img/img-footder/Bring.jpg" alt="">
+                                    <i stt="1" class="glyphicon glyphicon-play"></i>
+                                    <div stt="1" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#"> Bring Back The Summer(feat.OLY)</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#"> Rain Man, </a></li>
+                                    <li class="author-newvideo"><a href="#"> Oly</a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="2" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Leo.jpg" alt="">
+                                    <i stt="2" class="glyphicon glyphicon-play"></i>
+                                    <div stt="2" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#">Leo/Mirjam</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">Betonkust, </a></li>
+                                    <li class="author-newvideo"><a href="#">Palmbomem II</a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="3" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Lockers.jpg" alt="">
+                                    <i stt="3" class="glyphicon glyphicon-play"></i>
+                                    <div stt="3" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#"> Lockers</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">Robert Hood</a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="4" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Popcorn.jpg" alt="">
+                                    <i stt="4" class="glyphicon glyphicon-play"></i>
+                                    <div stt="4" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#">Popcorn </a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">Emanuel, </a></li>
+                                    <li class="author-newvideo"><a href="#">  Bazaar</a></li>
+                                    <li class="author-newvideo"><a href="#">  Hife</a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="5" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Street.jpg" alt="">
+                                    <i stt="5" class="glyphicon glyphicon-play"></i>
+                                    <div stt="5" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#">Street Knowledge</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">Harry Romero </a></li>
+
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="6" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Wanna.jpg" alt="">
+                                    <i stt="6" class="glyphicon glyphicon-play"></i>
+                                    <div stt="6" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#">We Wanna Party feat. Savage</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#">Savage , </a></li>
+                                    <li class="author-newvideo"><a href="#">TJR </a></li>
+                                </ul>
+                            </div>
+                                <hr>
+                            <div stt="7" class="newvideo">
+                                <a href="#"><img src="./img/img-footder/Zombie.jpg" alt="">
+                                    <i stt="7" class="glyphicon glyphicon-play"></i>
+                                    <div stt="7" class="newvideo-extra"></div>
+                                </a>
+                                <ul>
+                                    <li class="name-newvideo"><a href="#"> Zoombie Rot</a></li>
+                                    <br>
+                                    <li class="author-newvideo"><a href="#"> Megalodon</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footder-right">
+                <div class="right-title">
+                    <a href="#" id="BeatPort-new">BeatPort News </a>
+                    <br>
+                    <a href="#" id="music-new">Your source for electronic music news</a>
+                </div>
+                <div class="footder-right-video">
+                    <div class="right-video">
+                        <a href="#"><img src="./img/img-footder-right/Cyborg.jpg" alt="">
+                            <a href="#" class="char">Watch a Cyborg Hit the Strip Club in Mat Zo’s Futuristic “Sinful” Video</a>
+                        </a>
+                    </div>
+
+                    <div class="right-video">
+                        <a href="#"><img src="./img/img-footder-right/Oneohtrix.jpg" alt="">
+                            <a href="#" class="char">Four Tet Shares Oneohtrix Point Never’s “Evening Side” Edit in New Mix</a>
+                        </a>
+                    </div>
+
+                    <div class="right-video">
+                        <a href="#"><img src="./img/img-footder-right/tiga.jpg" alt="">
+                            <a href="#" class="char">Tiga Postpones His Upcoming North American Live Tour Dates</a>
+                        </a>
+                    </div>
+
+                    <div class="right-video">
+                        <a href="#"><img src="./img/img-footder-right/twenty.jpg" alt="">
+                            <a href="#" class="char">Twenty Years Ago, ‘Saturday Night Live’ Introduced its Viewers to Clubland</a>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <div class="PageBody">
+        <div class="PageBody-margin">
+           <div class="hot-artists-staff">
+               <div class="hot-staff-left">
+                   <div class="hot-playlist">
+                        <p class="hot-title">HOT PLAYLIST</p>
+                        <hr align = left>
+                        <div class="img-hotplaylist">
+                            <a href="#"><img src="./img/Hotplaylist/top1.jpg" alt=""></a>
+                            <a href="#"><img src="./img/Hotplaylist/top2.jpg" alt=""></a>
+                            <a href="#"><img src="./img/Hotplaylist/top3.jpg" alt=""></a> 
+                            <a href="#"><img src="./img/Hotplaylist/top4.jpg" alt=""></a>
+                            <a href="#"><img src="./img/Hotplaylist/top5.jpg" alt=""></a> 
+                            <a href="#"><img src="./img/Hotplaylist/top6.jpg" alt=""></a> 
+                        </div>
+                       
+                   </div>
+                   
+                   <div class="staff-picks-left">
+                       <div class="Staff-pick">
+                            <div class="staff-title">
+                                <p class="staff-top-title"> STAFF PICKS</p>
+                                <form >
+                                    <i class="glyphicon glyphicon-play"></i>
+                                   <input type="button" value="Play all">
+                                </form>
+                            </div>
+                            <hr>
+                        <div class="staff-picks-list">
+                            <div class="top-staff-video">
+
+                                <div stt="0" class="staff-video">
+                                    <a href="#">
+                                        <img src="./img/Staff-picks/top1.jpg" alt="">
+                                        <i stt="0" class="glyphicon glyphicon-play"></i>
+                                        <div stt="0" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#"> Tilted
+                                        -Orginam Mix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#"> KateSimko</a></li>, 
+                                        <li class="author-staff-video"><a href="#"> London Electronic Orchestra</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="1" class="staff-video">
+                                    <a href="#">
+                                        <img src="./img/Staff-picks/top2.jpg" alt="">
+                                        <i stt="1" class="glyphicon glyphicon-play"></i>
+                                        <div stt="1" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Night Watch - Athea Remix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#"> Athea</a></li>,
+                                        <li class="author-staff-video"><a href="#"> Marwan Sabb</a></li>,
+                                        <li class="author-staff-video"><a href="#"> Zahir(De)</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="2" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top3.jpg" alt="">
+                                        <i stt="2" class="glyphicon glyphicon-play"></i>
+                                        <div stt="2" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Breach - Original Mix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#">Fatima Al Qadiri </a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="3" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top4.jpg" alt="">
+                                        <i stt="3" class="glyphicon glyphicon-play"></i>
+                                        <div stt="3" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#"> Stranded - Paula Temple Remix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#">Paula Temple</a></li>,
+                                        <li class="author-staff-video"><a href="#">Chevel</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="4" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top5.jpg" alt="">
+                                        <i stt="4" class="glyphicon glyphicon-play"></i>
+                                        <div stt="4" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Das Vodkalied - Helena Hauff Remix </a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#">Pankow </a></li>,
+                                        <li class="author-staff-video"><a href="#"> Helena Hauff</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="5" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top6.jpg" alt="">
+                                        <i stt="5" class="glyphicon glyphicon-play"></i>
+                                        <div stt="5" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Sadness - Vinyl Version</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#">Steffi </a></li>
+
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="6" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top7.jpg" alt="">
+                                        <i stt="6" class="glyphicon glyphicon-play"></i>
+                                        <div stt="6" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Substitute - Original Mix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#">Nike.Bordom</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div stt="7" class="staff-video">
+                                    <a href="#"><img src="./img/Staff-picks/top8.jpg" alt="">
+                                        <i stt="7" class="glyphicon glyphicon-play"></i>
+                                        <div stt="7" class="staff-video-extra"></div>
+                                    </a>
+                                    <ul>
+                                        <li class="name-staff-video"><a href="#">Crocodile - Original Mix</a></li>
+                                        <br>
+                                        <li class="author-staff-video"><a href="#"> FS</a></li>,
+                                        <li class="author-staff-video"><a href="#"> Reid Speed</a></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                        </div>
+                    </div>
+
+                </div>
+                   </div>
+               </div>
+                
+                
+                <div class="FeaturedArtists-right">
+                    <p class="featured-title">Featured Artists </p>
+                    <hr align = left>
+                    <div class="img-featuredartists">
+                        <a href="#"><img src="./img/Featured-Aitists/top1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/Featured-Aitists/top2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/Featured-Aitists/top3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/Featured-Aitists/top4.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="GenresToExplore">
+               <div class="genresrtoexplore-titile">
+                   <p class="genres-title"> GENRES TO EXPLORE</p>
+                   <form>
+                       <input type="button" value="See all genres">
+                   </form>
+                   <hr> 
+                   <div class="img-genrestoexplore">
+                        <ul div class="list-genrestoexplore">
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top1.jpg" alt="">
+                                    <p class="text-list-genres"> Melodic grooves combining the driving force of techno with the soulful swing of house.</p>
+                                </a>
+                            </li>
+                            
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top2.jpg" alt="">
+                                    <p class="text-list-genres"> Soulful, melodic dance sounds that uplift underground clubs and festival stages around the world.</p>
+                                </a>
+                            </li>
+                            
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top3.jpg" alt="">
+                                    <p class="text-list-genres">
+                                    Dark, futuristic battle hymns that are forged for the heart of the underground dance floor. </p>
+                                </a>
+                            </li>
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top4.jpg" alt="">
+                                    <p class="text-list-genres"> Energized, vocal-centered club anthems to get you on the dance floor and your hands in the air.</p>
+                                </a>
+                            </li>
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top5.jpg" alt="">
+                                    <p class="text-list-genres">A distinctive mash-up of hip-hop and house incorporating new forms like G-house and electro funk.</p>
+                                </a>
+                            </li>
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top6.jpg" alt="">
+                                    <p class="text-list-genres">Energetic beats and pounding drums dominate this hardcore European dance style.</p>
+                                </a>
+                            </li>
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top7.jpg" alt="">
+                                    <p class="text-list-genres">Originated in Chicago during the 1980s, this uplifting dance style is an evolution of classic Disco.</p>
+                                </a>
+                            </li>
+                            <li class="list-img-text">
+                                <a href="#contact">
+                                    <img src="./img/Genres-to-explore/top8.jpg" alt="">
+                                    <p class="text-list-genres">A collection of sub-heavy sounds, rooted in modern styles like dubstep, broken beat and beyond.</p>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        
+                   </div>
+               </div>
+                
+            </div>
+            <hr>
+            <div class="BeatPort-Video">
+                <div class="title-beat-video">
+                    <a href="#contact">
+                        <p id="title-big"> BeatPort Video</p>
+                        <p id="title-small">Watch live performances from around the world</p>
+                    </a>
+                </div>
+                
+                <div class="watch-live">
+                    <ul class="video-beat">
+                        <li class="list-video"><a href="#contact">
+                            <img src="./img/Beat-Video/video1.jpg" alt="" class="img-livevideo">
+                            <div class="text-beatlivevideo">
+                                <div class="text-livevideo">
+                                    <p class="author-livevideo">Kimou</p>
+                                    <p class="name-livevideo">The School of House</p>
+                                    <p class="date-livevideo"> Aired February 14,2016</p>
+                                </div>
+                                <div class="text-livevideo">
+                                    <p class="author-livevideo">Stacey Pullen @Darkbeat port Balance </p>
+                                    <p class="name-livevideo">Beatport (AUS)</p>
+                                    <p class="date-livevideo"> Aired February 8,2016</p>
+                                </div>
+                                <div class="text-livevideo">
+                                    <p class="author-livevideo">Thunderdome Die Hard Day</p>
+                                    <p class="name-livevideo">Thunderdome</p>
+                                    <p class="date-livevideo"> Aired December 5 ,2015</p>
+                                </div>
+                                <div class="text-livevideo">
+                                    <p class="author-livevideo">Breach - Original Mix</p>
+                                    <p class="name-livevideo">Fatima Al Quadiri</p>
+                                    <p class="date-livevideo"> Aired February 23,2016</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-store">
+                    <a href="#contact"><img src="./img/Beat-Video/right.jpg"             alt=" app google - store ios">
+                    </a>
+                </div>
+                
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="footerPage">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="hot-event">
+                                <img src="./img/hot-img/kygo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="magazine">
+                                <p class="magazine-title">
+                                    Magazine
+                                </p>
+                                <a href="#" class="magazine-link">Customer Service</a>
+                                <a href="#" class="magazine-link">Subscribe</a>
+                                <a href="#" class="magazine-link">Buy this issue</a>
+                                <p class="magazine-title">
+                                    Beatport Biz
+                                </p>
+                                <p class="footer-info">
+                                    The online extension of Beatport Magazine, beatport.biz is the essential online destination for the music business.
+                                </p>
+                                <a href="#" class="magazine-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="sharing">
+                                <p class="sharing-title">Sharing Beatport</p>
+                                <a href="#">
+                                    <img src="./img/share/fb.png" alt="">
+                                    <span>Fabebook</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/twitter.png" alt="">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/google.png" alt="">
+                                    <span>Google+</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/instagram.png" alt="">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/youtube.png" alt="">
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="explore-beatport">
+                                <p class="explore-beatport-title">Explore Beatport</p>
+                                <a href="#">Shop</a>
+                                <a href="#">News Archive</a>
+                                <a href="#">Photos Archive</a>
+                                <a href="#">Videos Archive</a>
+                                <a href="#">Magazine Archive</a>
+                                <a href="#">Charts Archive</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="info-beatport">
+                                <p class="info-beatport-title">Information</p>
+                                <a href="#">Mobile</a>
+                                <a href="#">Chart Licensing</a>
+                                <a href="#">Billboard Events</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Sitemap</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Feedback</a>
+                                <a href="#">Lyrics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="col-sm-12">
+                        <p>© 2016 Billboard. All Rights Reserved.</p>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">About Our Ads</a>
+                        <a href="#">Advertising</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tag-playmusic">
+        <audio id="myTune" controls>
+            <source src="./music/a.mp3">
+            </audio>
+
+            <div class="playmusic-info">
+              <div class="imgPlayMusic">
+                  <img src="./img/hot-remix/bastards.jpg" alt="">
+              </div>
+              <div class="textPlayMusic">
+                  <a href="#" class="playmusic-name">Clarity</a>
+                  <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
+              </div>
+          </div>
+          <div class="playmusic-time">
+            <label id="playmusic-start"></label>
+            <progress id="playmusic-process" value="0" max="100"></progress>
+            <label id="playmusic-end"></label>
+        </div>
+        <div class="playmusic-button">
+            <button id="playmusic-prev">
+                <i class="glyphicon glyphicon-backward"></i>
+            </button>
+            <button id="playButton">
+                <i class="glyphicon glyphicon-play"></i>
+                <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button id="playmusic-next">
+                <i class="glyphicon glyphicon-forward"></i>
+            </button>
+            <button id="loopButton">
+                <i class="glyphicon glyphicon-repeat"></i>
+            </button>
+            <div id="volume">
+                <button id="volumeButton">
+                    <i class="glyphicon glyphicon-volume-down"></i>
+                    <i class="glyphicon glyphicon-volume-up"></i>
+                    <i class="glyphicon glyphicon-volume-off"></i>
+                </button>
+                <progress id="volumeProBar" value="100" max="100"></progress>
+            </div>  
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main-Cuong.js"></script>
+
+</body>
+
+</html>

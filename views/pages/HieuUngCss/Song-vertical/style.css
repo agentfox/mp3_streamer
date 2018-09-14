@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+
+.song-vertical {
+    display: inline-block;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+
+.song-vertical-top{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.song-vertical-top img{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.song-vertical-top-control{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: inline-block;
+    width: 0%;
+    padding: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.song-vertical-top button{
+    padding: 0;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+.song-vertical-play{
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+    background: #555;
+    color: #eee;
+    float: left;
+}
+
+.song-vertical-buy{
+    width: 70px;
+    font-family: cursive;
+    display: inline-block;
+    vertical-align: top;
+    background: #ee2577;
+    font-family: cursive;
+    border: 0;
+    float: left;
+    color: #eee;
+    font-weight: bold;
+}
+
+.song-vertical-share{
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: cursive;
+    background: #2222ee;
+    color: #eee;
+    border: 0;
+    float: left;
+}
+
+.song-vertical-share i{
+    margin-right: 5px;
+    font-size: 130%;
+}
+
+.song-vertical-top p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    width: 0;
+    height: 0%;
+    background: #000;
+    opacity: 0.3;
+    transition: 0.5s all;
+}
+
+.song-vertical:hover .song-vertical-top-control{
+    width: 100%;
+}
+
+.song-vertical:hover .song-vertical-top p{
+    width: 100%;
+    height: 100%;
+}
+
+.song-vertical-bottom{
+    margin: 0;
+    padding: 0;
+}
+
+.song-vertical-bottom a{
+    text-decoration: none;
+}
+

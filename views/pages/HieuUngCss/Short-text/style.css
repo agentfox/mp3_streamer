@@ -1,0 +1,17 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.short-text-content-more{
+    color: #2222aa;
+    cursor: pointer;
+}
+
+.short-text-content-less{
+    color: #2222aa;
+    display: none;
+    cursor: pointer;
+}

@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css1/style-layout.css">
+    <link rel="stylesheet" href="./css1/style-song-detail.css">
+    <title>Music</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="./img/icon/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-left">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about">Store</a></li>
+                                <li><a href="#contact">Listen</a></li>
+                                <li><a href="#contact">Shows</a></li>
+                                <li><a href="#contact">Video</a></li>
+                                <li><a href="#contact">News</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login pull-right">
+                                <li><a href="#" id="login-button">Login</a></li>
+                                <li><a href="#" id="register-button">Register</a></li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="login-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="login-title">
+                        <h1>Login</h1>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Email" class="form-element" id="email-form">
+                        <input type="password" placeholder="Password" class="form-element" id="password-form">
+                        <div class="remember-user">
+                            <input type="checkbox" id="remember-me" value="Forget password">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+
+                        <div class="login-form-button-group">
+                            <input type="button" id="button-me-login" class="button-me" value="Login">
+                            <input type="button" id="button-me-cancel" class="button-me" value="Cancel">
+                        </div>
+
+                        <p id="fogotten-password"><a href="#">Fogotten Password</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="register-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>Register</h1>
+                    <div id="register-form-name">
+                        <input type="text" id="register-firstname" placeholder="First Name*">
+                        <input type="text" id="register-lastname" placeholder="Last Name*">
+                    </div>
+                    <div id="register-form-email">
+                        <input type="email" id="register-email" placeholder="Email*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-password">
+                        <input type="password" id="register-password" placeholder="Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-confirm-password">
+                        <input type="password" id="register-confirm-password" placeholder="Confirm Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-terms">
+                        <input type="checkbox" id="register">
+                        <span>You agree on our </span>
+                        <a href="#">terms and condition</a>
+                    </div>
+                    <div id="register-form-button">
+                        <button id="register-form-button-register">Register</button>
+                        <button id="register-form-button-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra"></div>
+
+    <div id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="pull-left">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" id="genres-button">GENRES <i class="glyphicon glyphicon-menu-down"></i></a></li>
+                            <li><a href="#">TRACKS</a></li>
+                            <li><a href="#">RELEASES</a></li>
+                            <li><a href="#">CHARTS</a></li>
+                            <li><a href="#">STEMS</a></li>
+                            <li><a href="#">SOUNDS</a></li>
+                            <li>
+                                <form class="form-search">
+                                    <input type="text" placeholder="Search">
+                                    <button type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button"><i class="glyphicon glyphicon-shopping-cart"></i></button>
+                        <div class="cart-info">vuhoangha</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="genres-wrap">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="col-sm-5">
+                    <div id="genres-detail">
+                        <ul>
+                            <li><a href="#">Trap</a></li>
+                            <li><a href="#">Progessive House</a></li>
+                            <li><a href="#">Trance</a></li>
+                            <li><a href="#">Deep House</a></li>
+                            <li><a href="#">Future House</a></li>
+                            <li><a href="#">Tropical House</a></li>
+                            <li><a href="#">Techno House</a></li>
+                            <li><a href="#">Drum Bass</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hardstyle</a></li>
+                            <li><a href="#">Harddance</a></li>
+                            <li><a href="#">Hardcore</a></li>
+                            <li><a href="#">NightCore</a></li>
+                            <li><a href="#">NightStep</a></li>
+                            <li><a href="#">FutureBass</a></li>
+                            <li><a href="#">ChillStep</a></li>
+                            <li><a href="#">Melodic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 detail-song-wrap">
+                    <div class="detail-song">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4 detail-song-left">
+                                <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 detail-song-right">
+                                <p class="detail-song-nav">RELEASE</p>
+                                <p class="detail-song-name">
+                                    CHRONIC
+                                </p>
+                                <br>
+                                <p class="artist">ARTISTS</p>
+                                <a href="#" class="artist">KSHMR</a>
+                                <br>
+                                <p class="release-date">RELEASE DATE</p>
+                                <span class="release-date">2016-03-02</span>
+                                <br>
+                                <p class="labels">LABELS</p>
+                                <a href="#" class="labels">Spinnin' Record</a>
+                                <br>
+                                <div class="detail-song-play-buy">
+                                    <button class="detail-song-play">
+                                        <i class="glyphicon glyphicon-play"></i>
+                                    </button>
+                                    <button class="detail-song-buy">
+                                        <p>$2.8</p>
+                                    </button>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="detail-song-descrip">
+                                    <span class="descrip-title">DESCRIPTION</span>
+                                    <span id="short-text-content">Sophisticated minimalism was always a core feat of ALEX UNDER's portfolio, with the Spanish producer also serving as the founder and label manager for much-acclaimed techno label CMYK Musik. After releases on iconic imprints such as Trapez, Soma or Plus 8, the Madrilenian - one of the most sought-after electronic artists in Spain - now presents OLAS DE QUILA QUINA, his very first outing for Kompakt. Three slick, enticing cuts show him comitted to rolling basslines, rising synths and snappy percussion, all embedded in the futuristic sound design Alex has been honing over the course of his career. Unfolding to the backdrop of brooding metallic drones, the title track only needs a handful of carefully processed sounds to tell a highly evocative story - a focussed, geometrical jam that nonetheless allows for freewheeling outbursts of creativity. The same can be said for the punching, asymmetrical acid of EL REFLEJO DEL LACAR and the full-bodied bass bounce of LOLOG, as both cuts juxtapose sharp-edged shards of electronic texture with chewy, melodic synths. Tension-filled and catchy, it's a masterful update on ALEX UNDER's unique approach to techno, bold and subtle at the same time.
+                                    </span>
+                                    <span class="short-text-content-more">More</span>
+                                    <span class="short-text-content-less">Less</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="detail-song-all-track">
+                            <div class="detail-song-all-track-title">
+                                <span>3 TRACKS TOTAL</span>
+                            </div>
+                            <br>
+                            <div class="detail-song-all-track-content">
+                                <ul>
+                                    <li>
+                                        <div class="detail-song-all-track-play">ORDINAL</div>
+                                        <div class="detail-song-all-track-name">TITLE</div>
+                                        <div class="detail-song-all-track-artist">ARTIST</div>
+                                        <div class="detail-song-all-track-remixer">REMIXER</div>
+                                        <div class="detail-song-all-track-genre">GENRE</div>
+                                        <div class="detail-song-all-track-bpm">BPM</div>
+                                        <div class="detail-song-all-track-key">KEY</div>
+                                        <div class="detail-song-all-track-length">LENGTH</div>
+                                        <div class="detail-song-all-track-buy">COST</div>
+                                    </li>
+                                    <li>
+                                        <div class="detail-song-all-track-play">
+                                            <span>1</span>
+                                            <button><i class="fa fa-play"></i></button>
+                                        </div>
+                                        <div class="detail-song-all-track-name"><a href="#">Chemicals</a></div>
+                                        <div class="detail-song-all-track-artist"><a href="#">Don Diablo</a></div>
+                                        <div class="detail-song-all-track-remixer">
+                                            <a href="#"></a>
+                                        </div>
+                                        <div class="detail-song-all-track-genre"><a href="#">Future House</a></div>
+                                        <div class="detail-song-all-track-bpm"><span>135</span></div>
+                                        <div class="detail-song-all-track-key"><span>E-Min</span></div>
+                                        <div class="detail-song-all-track-length"><span>1.44</span></div>
+                                        <div class="detail-song-all-track-buy">
+                                            <button>$2.8</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="detail-song-all-track-play">
+                                            <span>1</span>
+                                            <button><i class="fa fa-play"></i></button>
+                                        </div>
+                                        <div class="detail-song-all-track-name"><a href="#">Chemicals</a></div>
+                                        <div class="detail-song-all-track-artist"><a href="#">Don Diablo</a></div>
+                                        <div class="detail-song-all-track-remixer"><a href="#">Dustee</a></div>
+                                        <div class="detail-song-all-track-genre"><a href="#">Future House</a></div>
+                                        <div class="detail-song-all-track-bpm"><span>135</span></div>
+                                        <div class="detail-song-all-track-key"><span>E-Min</span></div>
+                                        <div class="detail-song-all-track-length"><span>1.44</span></div>
+                                        <div class="detail-song-all-track-buy">
+                                            <button>$2.8</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="detail-song-all-track-play">
+                                            <span>1</span>
+                                            <button><i class="fa fa-play"></i></button>
+                                        </div>
+                                        <div class="detail-song-all-track-name"><a href="#">Chemicals</a></div>
+                                        <div class="detail-song-all-track-artist"><a href="#">Don Diablo</a></div>
+                                        <div class="detail-song-all-track-remixer"><a href="#">Vinai</a></div>
+                                        <div class="detail-song-all-track-genre"><a href="#">Future House</a></div>
+                                        <div class="detail-song-all-track-bpm"><span>135</span></div>
+                                        <div class="detail-song-all-track-key"><span>E-Min</span></div>
+                                        <div class="detail-song-all-track-length"><span>1.44</span></div>
+                                        <div class="detail-song-all-track-buy">
+                                            <button>$2.8</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="detail-song-all-track-play">
+                                            <span>1</span>
+                                            <button><i class="fa fa-play"></i></button>
+                                        </div>
+                                        <div class="detail-song-all-track-name"><a href="#">Chemicals</a></div>
+                                        <div class="detail-song-all-track-artist"><a href="#">Don Diablo</a></div>
+                                        <div class="detail-song-all-track-remixer"><a href="#">Touliver</a></div>
+                                        <div class="detail-song-all-track-genre"><a href="#">Future House</a></div>
+                                        <div class="detail-song-all-track-bpm"><span>135</span></div>
+                                        <div class="detail-song-all-track-key"><span>E-Min</span></div>
+                                        <div class="detail-song-all-track-length"><span>1.44</span></div>
+                                        <div class="detail-song-all-track-buy">
+                                            <button>$2.8</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="detail-song-all-track-play">
+                                            <span>1</span>
+                                            <button><i class="fa fa-play"></i></button>
+                                        </div>
+                                        <div class="detail-song-all-track-name"><a href="#">Chemicals</a></div>
+                                        <div class="detail-song-all-track-artist"><a href="#">Don Diablo</a></div>
+                                        <div class="detail-song-all-track-remixer"><a href="#">Rhymastic</a></div>
+                                        <div class="detail-song-all-track-genre"><a href="#">Future House</a></div>
+                                        <div class="detail-song-all-track-bpm"><span>135</span></div>
+                                        <div class="detail-song-all-track-key"><span>E-Min</span></div>
+                                        <div class="detail-song-all-track-length"><span>1.44</span></div>
+                                        <div class="detail-song-all-track-buy">
+                                            <button>$2.8</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 detail-song-artist">
+                        <div class="detail-song-artist-title">
+                            <span>More Track This Artist</span>
+                        </div>
+                        <div class="detail-song-artist-content">
+
+                            <div class="slider-detail-song-artist">
+                                <div stt="0" class="slider-detail-song-artist-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Nowd</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="1" class="slider-detail-song-artist-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="2" class="slider-detail-song-artist-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="3" class="slider-detail-song-artist-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="4" class="slider-detail-song-artist-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-artist-song">
+                                                <div class="detail-song-artist-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-artist-song-top-control">
+                                                        <button class="detail-song-artist-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-artist-song-buy">$2.8</button>
+                                                        <button class="detail-song-artist-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-artist-song-bottom">
+                                                    <p class="detail-song-artist-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-artist-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-artist-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>            
+
+                                <div class="slider-detail-song-artist-control">
+                                    <div stt="0" class="detail-song-artist-button-active detail-song-artist-button"></div>
+                                    <div stt="1" class="detail-song-artist-button"></div>
+                                    <div stt="2" class="detail-song-artist-button"></div>
+                                    <div stt="3" class="detail-song-artist-button"></div>
+                                    <div stt="4" class="detail-song-artist-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 detail-song-label">
+                        <div class="detail-song-label-title">
+                            <span>More Track This Label</span>
+                        </div>
+                        <div class="detail-song-label-content">
+
+                            <div class="slider-detail-song-label">
+                                <div stt="0" class="slider-detail-song-label-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Nower</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="1" class="slider-detail-song-label-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="2" class="slider-detail-song-label-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="3" class="slider-detail-song-label-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="4" class="slider-detail-song-label-img">
+                                    <ul>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-song-label-song">
+                                                <div class="detail-song-label-song-top">
+                                                    <img src="./img/hot-remix/pot.jpg" alt="">
+                                                    <div class="detail-song-label-song-top-control">
+                                                        <button class="detail-song-label-song-play"><i class="fa fa-play"></i></button>
+                                                        <button class="detail-song-label-song-buy">$2.8</button>
+                                                        <button class="detail-song-label-song-share"><i class="fa fa-facebook"></i>Share</button>
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                                <div class="detail-song-label-song-bottom">
+                                                    <p class="detail-song-label-song-name"><a href="#">Beautiful Now</a></p>
+                                                    <p class="detail-song-label-song-artist"><a href="#">Zedd</a></p>
+                                                    <p class="detail-song-label-song-label"><a href="#">Spinnin Record</a></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+
+                                <div class="slider-detail-song-label-control">
+                                    <div stt="0" class="slider-detail-song-label-button-active slider-detail-song-label-button"></div>
+                                    <div stt="1" class="slider-detail-song-label-button"></div>
+                                    <div stt="2" class="slider-detail-song-label-button"></div>
+                                    <div stt="3" class="slider-detail-song-label-button"></div>
+                                    <div stt="4" class="slider-detail-song-label-button"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerPage">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="hot-event">
+                                <img src="./img/hot-img/kygo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="magazine">
+                                <p class="magazine-title">
+                                    Magazine
+                                </p>
+                                <a href="#" class="magazine-link">Customer Service</a>
+                                <a href="#" class="magazine-link">Subscribe</a>
+                                <a href="#" class="magazine-link">Buy this issue</a>
+                                <p class="magazine-title">
+                                    Beatport Biz
+                                </p>
+                                <p class="footer-info">
+                                    The online extension of Beatport Magazine, beatport.biz is the essential online destination for the music business.
+                                </p>
+                                <a href="#" class="magazine-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="sharing">
+                                <p class="sharing-title">Sharing Beatport</p>
+                                <a href="#">
+                                    <img src="./img/share/fb.png" alt="">
+                                    <span>Fabebook</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/twitter.png" alt="">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/google.png" alt="">
+                                    <span>Google+</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/instagram.png" alt="">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/youtube.png" alt="">
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="explore-beatport">
+                                <p class="explore-beatport-title">Explore Beatport</p>
+                                <a href="#">Shop</a>
+                                <a href="#">News Archive</a>
+                                <a href="#">Photos Archive</a>
+                                <a href="#">Videos Archive</a>
+                                <a href="#">Magazine Archive</a>
+                                <a href="#">Charts Archive</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="info-beatport">
+                                <p class="info-beatport-title">Information</p>
+                                <a href="#">Mobile</a>
+                                <a href="#">Chart Licensing</a>
+                                <a href="#">Billboard Events</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Sitemap</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Feedback</a>
+                                <a href="#">Lyrics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="col-sm-12">
+                        <p>© 2016 Billboard. All Rights Reserved.</p>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">About Our Ads</a>
+                        <a href="#">Advertising</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tag-playmusic">
+        <audio id="myTune" controls>
+            <source src="./music/a.mp3">
+        </audio>
+
+        <div class="playmusic-info">
+            <div class="imgPlayMusic">
+                <img src="./img/hot-remix/bastards.jpg" alt="">
+            </div>
+            <div class="textPlayMusic">
+                <a href="#" class="playmusic-name">Clarity</a>
+                <a href="#" class="playmusic-label">Hayley Williams ft Zedd</a>
+            </div>
+        </div>
+        <div class="playmusic-time">
+            <label id="playmusic-start"></label>
+            <progress id="playmusic-process" value="0" max="100"></progress>
+            <label id="playmusic-end"></label>
+        </div>
+        <div class="playmusic-button">
+            <button id="playmusic-prev">
+                <i class="glyphicon glyphicon-backward"></i>
+            </button>
+            <button id="playButton">
+                <i class="glyphicon glyphicon-play"></i>
+                <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button id="playmusic-next">
+                <i class="glyphicon glyphicon-forward"></i>
+            </button>
+            <button id="loopButton">
+                <i class="glyphicon glyphicon-repeat"></i>
+            </button>
+            <div id="volume">
+                <button id="volumeButton">
+                    <i class="glyphicon glyphicon-volume-down"></i>
+                    <i class="glyphicon glyphicon-volume-up"></i>
+                    <i class="glyphicon glyphicon-volume-off"></i>
+                </button>
+                <progress id="volumeProBar" value="100" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js1/main-layout.js"></script>
+    <script type="text/javascript" src="./js1/main-song-detail.js"></script>
+</body>
+
+</html>

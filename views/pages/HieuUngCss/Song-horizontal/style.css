@@ -1,0 +1,197 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: cursive;
+}
+
+.song-horizontal {
+    display: inline-block;
+    width: 25%;
+    background-color: #333;
+    height: 100px;
+}
+
+.song-horizontal button{
+    cursor: pointer;
+}
+
+.song-horizontal-left {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    width: 30%;
+    vertical-align: top;
+    position: relative;
+    color: #eee;
+    height: 100%;
+}
+
+.song-horizontal-left p {
+    display: inline-block;
+    width: 100%;
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.song-horizontal-left span{
+    background: #444;
+    z-index: 1;
+    transition: 0.5s all;
+}
+
+.song-horizontal-left-top{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 0%;
+}
+
+.song-horizontal-left-right{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0%;
+    width: 0%;
+}
+
+.song-horizontal-left-bottom{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0%;
+    width: 0%;
+}
+
+.song-horizontal-left-left{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 0%;
+}
+
+.song-horizontal-left button {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    font-size: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 20px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.8s all;
+}
+
+.song-horizontal-right {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100%;
+}
+
+.song-horizontal-right a{
+    text-decoration: none;
+}
+
+.song-horizontal-right p{
+    padding-left: 5px;
+    width: auto;
+}
+
+.song-horizontal-name{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.song-horizontal-name a{
+    color: #fff;
+    font-size: 120%;
+}
+
+.song-horizontal-artist{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.song-horizontal-artist a{
+    color: #22aacc;
+    font-size: 105%;
+}
+
+.song-horizontal-label{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.song-horizontal-label a{
+    color: #888;
+    font-size: 95%;
+}
+
+.song-horizontal-right button{
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 25px;
+    color: #eee;
+    background: #ee32a0;
+    font-family: cursive;
+    transition: .5s all;
+    font-weight: bold;
+}
+
+.song-horizontal:hover .song-horizontal-left span{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+.song-horizontal:hover .song-horizontal-left button{
+    display: inline-block;
+    opacity: 1;
+}
+
+.song-horizontal:hover .song-horizontal-right button{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

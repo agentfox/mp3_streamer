@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/style-chart.css" />
+    <title>Charts</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand header-logo" href="#" target="_parent">
+                                <img src="./img/icon/logo.png" alt="Beatport">
+                            </a>
+                        </div>
+                        <div id="collapse" class="navbar-collase">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="active"><a href="#">Store</a></li>
+                                <li><a href="#">Listen</a></li>
+                                <li><a href="#">Shows</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" id="login"><span class="glyphicon glyphicon glyphicon-user"></span>Log In / Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <div id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="subnav pull-left">
+                        <ul class="nav navbar-nav">
+                            <li class="subnav-link"><a id="genres-parent" href="#">GENRES <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                            <li class="subnav-link"><a href="#">TRACKS</a></li>
+                            <li class="subnav-link"><a href="#">RELEASES</a></li>
+                            <li class="subnav-link"><a href="#">CHARTS</a></li>
+                            <li class="subnav-link"><a href="#">STEMS</a></li>
+                            <li class="subnav-link"><a href="#">SOUNDS</a></li>
+                            <li>
+                                <form class="form-search" action="" method="get">
+                                    <input type="text" placeholder="SEARCH...">
+                                    <button type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cart" class="pull-right">
+                        <button type="button"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="genres-wrap">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="col-xs-5">
+                    <div id="genres-detail">
+                        <ul>
+                            <li><a href="#">Trap</a></li>
+                            <li><a href="#">Progessive House</a></li>
+                            <li><a href="#">Trance</a></li>
+                            <li><a href="#">Deep House</a></li>
+                            <li><a href="#">Future House</a></li>
+                            <li><a href="#">Tropical House</a></li>
+                            <li><a href="#">Techno House</a></li>
+                            <li><a href="#">Drum Bass</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hardstyle</a></li>
+                            <li><a href="#">Harddance</a></li>
+                            <li><a href="#">Hardcore</a></li>
+                            <li><a href="#">NightCore</a></li>
+                            <li><a href="#">NightStep</a></li>
+                            <li><a href="#">FutureBass</a></li>
+                            <li><a href="#">ChillStep</a></li>
+                            <li><a href="#">Melodic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content-top">
+                        <div class="pull-left">
+                            <h1>DJ CHARTS</h1>
+                        </div>
+                        <div class="pull-right">
+                            <ul class="selectors">
+                                <li class="active"><a href="#">FEATURED</a></li>
+                                <li><a href="#">ALL DJ CHARTS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs 12">
+                    <div class="col-xs-8">
+                        <div class="slider">
+                            <a href="#">
+                                <img stt="0" src="./img/charts/patricebaumel.jpg" alt="" class="slider-img slider-img-active"></a>
+                            <a href="#">
+                                <img stt="1" src="./img/charts/andrelodemann.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="2" src="./img/charts/dominikeulberg.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="3" src="./img/charts/dominikeulberg.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="4" src="./img/charts/adamport.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="5" src="./img/charts/dense&pika.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="6" src="./img/charts/pedestrian.jpg" alt="" class="slider-img"></a>
+                            <ul class="slider-ul">
+                                <li stt="0" class="slider-li slider-li-active"></li>
+                                <li stt="1" class="slider-li"></li>
+                                <li stt="2" class="slider-li"></li>
+                                <li stt="3" class="slider-li"></li>
+                                <li stt="4" class="slider-li"></li>
+                                <li stt="5" class="slider-li"></li>
+                                <li stt="6" class="slider-li"></li>
+                            </ul>
+                        </div>
+                        <div class="new-charts">
+                            <div class="new-charts-top">
+                                <div class="pull-left">
+                                    <h3>NEW CHARTS</h3>
+                                </div>
+                                <div class="pull-right">
+                                    <ul class="direction">
+                                        <li class="text-center"><a class="preview" href="#"><span class="glyphicon glyphicon-triangle-left"></span></a></li>
+                                        <li class="text-center"><a class="next" href="#"><span class="glyphicon glyphicon-triangle-right"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="new-charts-detail">
+                                <div stt="0" class="new-charts-div new-charts-div-active">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/timgreen.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Tim Gren's Among Wolves</a>
+                                            <a class="new-charts-artist link-decorate" href="">Tim Green</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/nhansolo.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">NHAN SOLO - MARCH CHART</a>
+                                            <a class="new-charts-artist link-decorate" href="">Nhan Solo</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/flashmob.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Flashmob "Classwar" Top 10</a>
+                                            <a class="new-charts-artist link-decorate" href="">Flashmob</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/sonnywharton.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Sonny Wharton "All night" Top</a>
+                                            <a class="new-charts-artist link-decorate" href="">Sonny Wharton</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/hectorcouto.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">March Top 10</a>
+                                            <a class="new-charts-artist link-decorate" href="">Hector Couto</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/blank-artist.png" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Foreverness!</a>
+                                            <a class="new-charts-artist link-decorate" href=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="1" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/jewelkid.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Alleanza Konnekt 02 Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Jewel Kid</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/shibasan.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Shiba "WMC" Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Shiba San</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/blank-artist.png" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">In March</a>
+                                            <a class="new-charts-artist link-decorate" href=""></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/wolf+lamp.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Wolf + Lamb's True Love Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Wolf + Lamb</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/hectorcouto.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">March Top 10</a>
+                                            <a class="new-charts-artist link-decorate" href="">Hector Couto</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/saschadive.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Sascha Dive's March 2016 Top</a>
+                                            <a class="new-charts-artist link-decorate" href="">Sascha Dive</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="2" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/compuphonic.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Compuphonic - Welcome</a>
+                                            <a class="new-charts-artist link-decorate" href="">Compuphonic</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/reneamesz.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Rene Amesz Shaman Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Rene Amesz</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/mikewilliam.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Sweet & Sour' Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Mike Williams</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/ferrycorsten.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Ferry Corsten WMC miami</a>
+                                            <a class="new-charts-artist link-decorate" href="">Ferry Corsten</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/scottyboy.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">No Good / Inside Out - Miami</a>
+                                            <a class="new-charts-artist link-decorate" href="">Scotty Boy</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/roter&lewis.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">"Light On" Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Roter & Lewis</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="3" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/purplediscomachine.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Purple March Tales</a>
+                                            <a class="new-charts-artist link-decorate" href="">Purple Disco Machine</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/manafromsky.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Manna From Sky March Top 10</a>
+                                            <a class="new-charts-artist link-decorate" href="">Manna From Sky</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/jellyforthebabie.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Jelly's March Sweet</a>
+                                            <a class="new-charts-artist link-decorate" href="">Jelly For The Babies</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/stevebug.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">This And That</a>
+                                            <a class="new-charts-artist link-decorate" href="">Steve Bug</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/jeanclaudeades.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Jean Claude Ades In-to-me</a>
+                                            <a class="new-charts-artist link-decorate" href="">Jean Claude Ades</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/blank-artist.png" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Regeneration</a>
+                                            <a class="new-charts-artist link-decorate" href=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="4" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/climbers.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Climbers'sMiami Music Week</a>
+                                            <a class="new-charts-artist link-decorate" href="">Climbers</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/droog(LA).jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">February in Los Angeles</a>
+                                            <a class="new-charts artist link-decorate" href="">Droog(LA)</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/bodhi.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Jams</a>
+                                            <a class="new-charts-artist link-decorate" href="">Bodhi</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/dje-clyps.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Captain Ratchet Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">DJ E-Clyps</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/blank-artist.png" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Lusch!</a>
+                                            <a class="new-charts-artist link-decorate" href=""></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/djimasoundsystem.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">African fall</a>
+                                            <a class="new-charts-artist link-decorate" href="">Djuma Soundsystem</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="5" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/blank-artist.png" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">"The Divided Self" Top 10</a>
+                                            <a class="new-charts-artist link-decorate" href=""></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/leevandowski.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Cerca Trova Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Lee Van Dowski</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/saschadive.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Sácha Dive's Mảch 2016 Top</a>
+                                            <a class="new-charts-artist link-decorate" href="">Sácha Dive</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/hotsince82.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Hot Since 82's Feb Jams</a>
+                                            <a class="new-charts-artist link-decorate" href="">Hot Since 82</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/doctordru.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Let's sing a little serenade</a>
+                                            <a class="new-charts-artist link-decorate" href="">Doctor Dru</a>
+                                        </li>
+                                        <li>
+                                            <img src="img/new-charts/joeski.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Last Dance Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">Joeski</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="6" class="new-charts-div">
+                                    <ul class="new-charts-div-ul">
+                                        <li>
+                                            <img src="img/new-charts/umek.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">UMEK's Double The Lust Chart</a>
+                                            <a class="new-charts-artist link-decorate" href="">UMEK</a>
+                                        </li>
+                                        <li>
+
+                                            <img src="img/new-charts/mrv.jpg" alt="">
+                                            <a class="new-charts-name link-decorate" href="#">Mr.V - 6AM Chảt. - Feb. 2016</a>
+                                            <a class="new-charts-artist link-decorate" href="">Mr.V</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="new-chart-slide">
+                                    <ul>
+                                        <li stt="0" class="new-chart-slide-li new-chart-slide-li-active"></li>
+                                        <li stt="1" class="new-chart-slide-li"></li>
+                                        <li stt="2" class="new-chart-slide-li"></li>
+                                        <li stt="3" class="new-chart-slide-li"></li>
+                                        <li stt="4" class="new-chart-slide-li"></li>
+                                        <li stt="5" class="new-chart-slide-li"></li>
+                                        <li stt="6" class="new-chart-slide-li"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="chart-list">
+                        <h2>DJ CHARTS BY GENRES</h2>
+                        <ul class="chart-type">
+                            <li><a href="#">Tech House</a></li>
+                            <li><a href="#">Deep House</a></li>
+                            <li><a href="#">Techno</a></li>
+                            <li><a href="#">Progressive House</a></li>
+                            <li><a href="#">Electro House</a></li>
+                            <li><a href="#">Indie Dance/Nu Disco</a></li>
+                            <li><a href="#">Electronica</a></li>
+                            <li><a href="#">Minimal</a></li>
+                            <li><a href="#">Trance</a></li>
+                            <li><a href="#">Dubstep</a></li>
+                            <li><a href="#">Drum & Bass</a></li>
+                            <li><a href="#">Chill Out</a></li>
+                            <li><a href="#">Breaks</a></li>
+                            <li><a href="#">Hip-Hop</a></li>
+                            <li><a href="#">Psy-Trance</a></li>
+                            <li><a href="#">Hardcore / Hard Techno</a></li>
+                            <li><a href="#">Pop/Rock</a></li>
+                            <li><a href="#">Glitch Hop</a></li>
+                            <li><a href="#">Funk / R&B</a></li>
+                            <li><a href="#">DJ Tools</a></li>
+                            <li><a href="#">Reggae / Dub</a></li>
+                            <li><a href="#">World</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerPage">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="hot-event">
+                                <img src="./img/hot-img/kygo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="magazine">
+                                <p class="magazine-title">
+                                    Magazine
+                                </p>
+                                <a href="#" class="magazine-link">Customer Service</a>
+                                <a href="#" class="magazine-link">Subscribe</a>
+                                <a href="#" class="magazine-link">Buy this issue</a>
+                                <p class="magazine-title">
+                                    Beatport Biz
+                                </p>
+                                <p class="footer-info">
+                                    The online extension of Beatport Magazine, beatport.biz is the essential online destination for the music business.
+                                </p>
+                                <a href="#" class="magazine-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="sharing">
+                                <p class="sharing-title">Sharing Beatport</p>
+                                <a href="#">
+                                    <img src="./img/share/fb.png" alt="">
+                                    <span>Fabebook</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/twitter.png" alt="">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/google.png" alt="">
+                                    <span>Google+</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/instagram.png" alt="">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/youtube.png" alt="">
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="explore-beatport">
+                                <p class="explore-beatport-title">Explore Beatport</p>
+                                <a href="#">Shop</a>
+                                <a href="#">News Archive</a>
+                                <a href="#">Photos Archive</a>
+                                <a href="#">Videos Archive</a>
+                                <a href="#">Magazine Archive</a>
+                                <a href="#">Charts Archive</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="info-beatport">
+                                <p class="info-beatport-title">Information</p>
+                                <a href="#">Mobile</a>
+                                <a href="#">Chart Licensing</a>
+                                <a href="#">Billboard Events</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Sitemap</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Feedback</a>
+                                <a href="#">Lyrics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="col-sm-12">
+                        <p>© 2016 Billboard. All Rights Reserved.</p>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">About Our Ads</a>
+                        <a href="#">Advertising</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tag-playmusic">
+        <audio id="myTune" controls>
+            <source src="./music/a.mp3">
+        </audio>
+
+        <div class="playmusic-info">
+            <img src="./img/hot-remix/bastards.jpg" alt="">
+            <div>
+                <a href="#" class="playmusic-name">Clarity</a>
+                <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
+            </div>
+        </div>
+        <div class="playmusic-time">
+            <label id="playmusic-start"></label>
+            <progress id="playmusic-process" value="0" max="100"></progress>
+            <label id="playmusic-end"></label>
+        </div>
+        <div class="playmusic-button">
+            <button id="playmusic-prev">
+                <i class="glyphicon glyphicon-backward"></i>
+            </button>
+            <button id="playButton">
+                <i class="glyphicon glyphicon-play"></i>
+                <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button id="playmusic-next">
+                <i class="glyphicon glyphicon-forward"></i>
+            </button>
+            <button id="loopButton">
+                <i class="glyphicon glyphicon-repeat"></i>
+            </button>
+            <div id="volume">
+                <button id="volumeButton">
+                    <i class="glyphicon glyphicon-volume-down"></i>
+                    <i class="glyphicon glyphicon-volume-up"></i>
+                    <i class="glyphicon glyphicon-volume-off"></i>
+                </button>
+                <progress id="volumeProBar" value="100" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main-chart.js"></script>
+<script type="text/javascript" src="js/npm.js"></script>
+
+</body>
+<!-- end body -->
+
+</html>

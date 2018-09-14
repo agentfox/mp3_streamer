@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/style-genres.css">
+    <title>Music</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="./img/icon/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-left">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about">Store</a></li>
+                                <li><a href="#contact">Listen</a></li>
+                                <li><a href="#contact">Shows</a></li>
+                                <li><a href="#contact">Video</a></li>
+                                <li><a href="#contact">News</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login pull-right">
+                                <li><a href="#" id="login-button">Login</a></li>
+                                <li><a href="#" id="register-button">Register</a></li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="login-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="login-title">
+                        <h1>Login</h1>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Email" class="form-element" id="email-form">
+                        <input type="password" placeholder="Password" class="form-element" id="password-form">
+                        <div class="remember-user">
+                            <input type="checkbox" id="remember-me" value="Forget password">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+
+                        <div class="login-form-button-group">
+                            <input type="button" id="button-me-login" class="button-me" value="Login">
+                            <input type="button" id="button-me-cancel" class="button-me" value="Cancel">
+                        </div>
+
+                        <p id="fogotten-password"><a href="#">Fogotten Password</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="register-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>Register</h1>
+                    <div id="register-form-name">
+                        <input type="text" id="register-firstname" placeholder="First Name*">
+                        <input type="text" id="register-lastname" placeholder="Last Name*">
+                    </div>
+                    <div id="register-form-email">
+                        <input type="email" id="register-email" placeholder="Email*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-password">
+                        <input type="password" id="register-password" placeholder="Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-confirm-password">
+                        <input type="password" id="register-confirm-password" placeholder="Confirm Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-terms">
+                        <input type="checkbox" id="register">
+                        <span>You agree on our </span>
+                        <a href="#">terms and condition</a>
+                    </div>
+                    <div id="register-form-button">
+                        <button id="register-form-button-register">Register</button>
+                        <button id="register-form-button-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra"></div>
+
+    <div id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="pull-left">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" id="genres-button">GENRES <i class="glyphicon glyphicon-menu-down"></i></a></li>
+                            <li><a href="#">TRACKS</a></li>
+                            <li><a href="#">RELEASES</a></li>
+                            <li><a href="#">CHARTS</a></li>
+                            <li><a href="#">STEMS</a></li>
+                            <li><a href="#">SOUNDS</a></li>
+                            <li>
+                                <form class="form-search">
+                                    <input type="text" placeholder="Search">
+                                    <button type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button"><i class="glyphicon glyphicon-shopping-cart"></i></button>
+                        <div class="cart-info">vuhoangha</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="genres-header-title">
+        <div>
+            <p>DUBSTEP</p>
+        </div>
+    </div>
+
+    <div id="genres-wrap">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="col-sm-5">
+                    <div id="genres-detail">
+                        <ul>
+                            <li><a href="#">Trap</a></li>
+                            <li><a href="#">Progessive House</a></li>
+                            <li><a href="#">Trance</a></li>
+                            <li><a href="#">Deep House</a></li>
+                            <li><a href="#">Future House</a></li>
+                            <li><a href="#">Tropical House</a></li>
+                            <li><a href="#">Techno House</a></li>
+                            <li><a href="#">Drum Bass</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hardstyle</a></li>
+                            <li><a href="#">Harddance</a></li>
+                            <li><a href="#">Hardcore</a></li>
+                            <li><a href="#">NightCore</a></li>
+                            <li><a href="#">NightStep</a></li>
+                            <li><a href="#">FutureBass</a></li>
+                            <li><a href="#">ChillStep</a></li>
+                            <li><a href="#">Melodic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-8">
+                        <div class="slider">
+                            <a href="#">
+                                <img stt="0" src="./img/slider/1.jpg" alt="" class="slider-img slider-img-active"></a>
+                            <a href="#">
+                                <img stt="1" src="./img/slider/2.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="2" src="./img/slider/3.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="3" src="./img/slider/4.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="4" src="./img/slider/5.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="5" src="./img/slider/6.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="6" src="./img/slider/7.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="7" src="./img/slider/8.jpg" alt="" class="slider-img"></a>
+                            <a href="#">
+                                <img stt="8" src="./img/slider/9.jpg" alt="" class="slider-img"></a>
+                            <ul class="slider-ul">
+                                <li stt="0" class="slider-li slider-li-active"></li>
+                                <li stt="1" class="slider-li"></li>
+                                <li stt="2" class="slider-li"></li>
+                                <li stt="3" class="slider-li"></li>
+                                <li stt="4" class="slider-li"></li>
+                                <li stt="5" class="slider-li"></li>
+                                <li stt="6" class="slider-li"></li>
+                                <li stt="7" class="slider-li"></li>
+                                <li stt="8" class="slider-li"></li>
+                            </ul>
+                        </div>
+                        <div class="top-6-dj">
+                            <p class="top-6-dj-title">Top 6 Artist</p>
+                            <div class="top-6-dj-content">
+                                <div stt="0" class="top-6-dj-content-1 top-6-dj-content-div">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/top-6-dj/arminvanbuuren.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                        </li>
+                                        <li>
+                                            <img src="./img/top-6-dj/lucasbacchesti.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                        </li>
+                                        <li>
+                                            <img src="./img/top-6-dj/matador.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="1" class="top-6-dj-content-2 top-6-dj-content-div">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/top-6-dj/pedestrlan.jpg" alt="">
+                                            <a href="#">R3hab</a>
+                                        </li>
+                                        <li>
+                                            <img src="./img/top-6-dj/umek.jpg" alt="">
+                                            <a href="#">David Guetta</a>
+                                        </li>
+                                        <li>
+                                            <img src="./img/top-6-dj/sandervandoorn.jpg" alt="">
+                                            <a href="#">Tiësto</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-6-dj-slider">
+                                    <div stt="0" class="top-6-dj-slider-div top-6-dj-slider-div-active"></div>
+                                    <div stt="1" class="top-6-dj-slider-div"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hot-remix">
+                            <p class="hot-remix-title">Hot Tracks</p>
+                            <div stt="0" class="hot-remix-div hot-remix-div-active">
+                                <ul class="hot-remix-div-ul">
+                                    <li>
+                                        <img src="./img/hot-remix/odyssey.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/supernatural.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Love</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/reminder.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Chronic</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Matroda</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/losingmyself.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Queens Day</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Mele</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/thesleeperhas.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="1" class="hot-remix-div">
+                                <ul class="hot-remix-div-ul">
+                                    <li>
+                                        <img src="./img/hot-remix/hydraulic.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/bastards.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Love</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/pot.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Chronic</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Matroda</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/f4llextended.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Queens Day</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Mele</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/riseclub.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="2" class="hot-remix-div">
+                                <ul class="hot-remix-div-ul">
+                                    <li>
+                                        <img src="./img/hot-remix/odyssey.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/supernatural.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Love</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/reminder.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Chronic</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Matroda</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/losingmyself.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Queens Day</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Mele</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/hot-remix/thesleeperhas.jpg" alt="">
+                                        <a href="#" class="hot-remix-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="hot-remix-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="hot-remix-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hot-remix-pages">
+                                <ul>
+                                    <li stt="0" class="hot-remix-pages-li hot-remix-pages-li-active"></li>
+                                    <li stt="1" class="hot-remix-pages-li"></li>
+                                    <li stt="2" class="hot-remix-pages-li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="new-tracks">
+                            <p class="new-tracks-title">New Tracks</p>
+                            <div stt="0" class="new-track-div new-track-div-active">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/gulty-douglasgreed.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Guilty</a>
+                                        <a href="#" class="new-track-artist link-decorate">Douglas</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/anyimujeromesydenham.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/questtothewest-bot.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/dontclockme-909tllinfinity.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/comingover-tiesto.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="1" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/thedealep-kurlose.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/playitloudep.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/circadian.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/moments.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/viper.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/blackwalls.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/sleeplessnights.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/lastloveep.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/comegetit.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/lospueblos.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="2" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="3" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="4" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="5" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/chronic-matroda.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/queensday-mele.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-decorate"><img src="./img/new-tracks/sax-afojack.jpg" alt=""></a>
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div stt="6" class="new-track-div">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">MeSoHorny</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="new-tracks-pages">
+                                <ul>
+                                    <li stt="0" class="new-tracks-pages-li new-tracks-pages-li-active"></li>
+                                    <li stt="1" class="new-tracks-pages-li"></li>
+                                    <li stt="2" class="new-tracks-pages-li"></li>
+                                    <li stt="3" class="new-tracks-pages-li"></li>
+                                    <li stt="4" class="new-tracks-pages-li"></li>
+                                    <li stt="5" class="new-tracks-pages-li"></li>
+                                    <li stt="6" class="new-tracks-pages-li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="live-set">
+                            <p class="live-set-title">Top Liveset</p>
+                            <div class="live-set-content">
+                                <div stt="0" class="live-set-content-div live-set-content-active">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/tastelike.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/abovebeyond.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/henrysaiz.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/february2016.jpg" alt="">
+                                            <a href="#">Zedd</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/wearemagical.jpg" alt="">
+                                            <a href="#">Moti</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/queen.jpg" alt="">
+                                            <a href="#">DashBerlin</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="1" class="live-set-content-div">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/denseftpika.jpg" alt="">
+                                            <a href="#">R3hab</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/henrysaiz.jpg" alt="">
+                                            <a href="#">David Guetta</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/lastdancechart.jpg" alt="">
+                                            <a href="#">Tiësto</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/nickolivetti.jpg" alt="">
+                                            <a href="#">R3hab</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/tastelike.jpg" alt="">
+                                            <a href="#">David Guetta</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/nickolivetti.jpg" alt="">
+                                            <a href="#">Tiësto</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="2" class="live-set-content-div">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/tastelike.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/abovebeyond.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/henrysaiz.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/february2016.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/wearemagical.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/queen.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="3" class="live-set-content-div">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/tastelike.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/abovebeyond.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/henrysaiz.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/february2016.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/wearemagical.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/queen.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div stt="4" class="live-set-content-div">
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/tastelike.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/abovebeyond.jpg" alt="">
+                                            <a href="#">Oliver Heldens</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/henrysaiz.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+
+                                            <img src="./img/live-set/february2016.jpg" alt="">
+                                            <a href="#">Sam Feldt</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/wearemagical.jpg" alt="">
+                                            <a href="#">Oliver Heldens
+                                                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./img/live-set/queen.jpg" alt="">
+                                            <a href="#">Calvin Harris</a>
+                                            <div class="track-option">
+                                                <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                                <button class="track-buy">$ 1.14</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="live-set-slider">
+                                    <div stt="0" class="live-set-slider-div live-set-slider-div-active"></div>
+                                    <div stt="1" class="live-set-slider-div"></div>
+                                    <div stt="2" class="live-set-slider-div"></div>
+                                    <div stt="3" class="live-set-slider-div"></div>
+                                    <div stt="4" class="live-set-slider-div"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-tracks">
+                            <p class="new-tracks-title">Hot TrackList</p>
+                            <div stt="0" class="new-track-div new-track-div-active">
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/mesohorny-bobbyrock.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Wobble House</a>
+                                        <a href="#" class="new-track-artist link-decorate">Bobby Rock</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/love-marqulshawkes.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">101 Signature</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">BL3R Jungle</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                    </li>
+                                </ul>
+                                <ul class="new-track-div-ul">
+                                    <li>
+                                        <img src="./img/new-tracks/gulty-douglasgreed.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Guilty</a>
+                                        <a href="#" class="new-track-artist link-decorate">Douglas</a>
+                                        <a href="#" class="new-track-label link-decorate">Big ft Dirty</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/anyimujeromesydenham.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Love</a>
+                                        <a href="#" class="new-track-artist link-decorate">Marpuls Hawkes</a>
+                                        <a href="#" class="new-track-label link-decorate">Aus Music</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/questtothewest-bot.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Chronic</a>
+                                        <a href="#" class="new-track-artist link-decorate">Matroda</a>
+                                        <a href="#" class="new-track-label link-decorate">Spinnin's Records</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/dontclockme-909tllinfinity.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Queens Day</a>
+                                        <a href="#" class="new-track-artist link-decorate">Mele</a>
+                                        <a href="#" class="new-track-label link-decorate">Lobster Boy</a>
+                                    </li>
+                                    <li>
+                                        <img src="./img/new-tracks/comingover-tiesto.jpg" alt="">
+                                        <a href="#" class="new-track-name link-decorate">Sax - Afrojack Edit</a>
+                                        <a href="#" class="new-track-artist link-decorate">Afrojack, Karim</a>
+                                        <a href="#" class="new-track-label link-decorate">Wall Recordings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="top-ten">
+                            <p class="top-ten-title">TOP TEN</p>
+                            <ul>
+                                <li>
+                                    <div class="top-li-left">1</div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Show me love</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Sam Feldt</a>
+                                        <a href="#" class="top-ten-label link-decorate">Spinnin' Records</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        2
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Say you do</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Tien Tien, Johnny Tran</a>
+                                        <a href="#" class="top-ten-label link-decorate">Armada Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        3
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Another you</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Armin van Buuren, Mr. Probz</a>
+                                        <a href="#" class="top-ten-label link-decorate">Armada Music</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        4
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Suvivors</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Hardwell, Dannic, Haris</a>
+                                        <a href="#" class="top-ten-label link-decorate">Revealed</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        5
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Firestone</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Kygo, Conrad Sewell</a>
+                                        <a href="#" class="top-ten-label link-decorate">Sony</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        6
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Beautiful Now</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Zedd, Jon Bellion</a>
+                                        <a href="#" class="top-ten-label link-decorate">InterScope</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        7
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Waitting for love</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Avicii</a>
+                                        <a href="#" class="top-ten-label link-decorate">Ultra</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        8
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Valentine ngot ngao</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Miko Lan Trinh, Rhymastic</a>
+                                        <a href="#" class="top-ten-label link-decorate">Ultra</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        9
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Roses</a>
+                                        <a href="#" class="top-ten-artist link-decorate">The Chainsmokers, Rozes</a>
+                                        <a href="#" class="top-ten-label link-decorate">Disruptor</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-li-left">
+                                        10
+                                    </div>
+                                    <div class="top-li-right">
+                                        <a href="#" class="top-ten-name-song link-decorate">Stay the night</a>
+                                        <a href="#" class="top-ten-artist link-decorate">Zedd, Hayley Williams, Touliver</a>
+                                        <a href="#" class="top-ten-label link-decorate">SpaceSpeakers</a>
+                                        <div class="track-option">
+                                            <button class="track-play"><i class="glyphicon glyphicon-play"></i></button>
+                                            <button class="track-buy">$ 1.14</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-ten-demo">
+                            <p class="top-ten-demo-title">TOP TEN DEMO</p>
+                            <ul>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/blackwalls.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        1
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Show me love</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Sam Feldt</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Spinnin' Records</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/anyimujeromesydenham.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        2
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Say you do</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Tien Tien, Johnny Tran</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Armada Music</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/chronic-matroda.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        3
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Another you</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Armin van Buuren, Mr. Probz</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Armada Music</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/comegetit.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        4
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Suvivors</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Hardwell, Dannic, Haris</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Revealed</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/comingover-tiesto.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        5
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Firestone</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Kygo, Conrad Sewell</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Sony</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/moments.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        6
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Beautiful Now</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Zedd, Jon Bellion</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">InterScope</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/lastloveep.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        7
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Waitting for love</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Avicii</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Ultra</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/queensday-mele.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        8
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Valentine ngot ngao</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Miko Lan Trinh, Rhymastic</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Ultra</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/sax-afojack.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        9
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Roses</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">The Chainsmokers, Rozes</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">Disruptor</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-ten-demo-img">
+                                        <img src="./img/new-tracks/viper.jpg" alt="">
+                                    </div>
+                                    <div class="top-ten-demo-li-left">
+                                        10
+                                    </div>
+                                    <div class="top-ten-demo-li-right">
+                                        <a href="#" class="top-ten-demo-name link-decorate">Stay the night</a>
+                                        <a href="#" class="top-ten-demo-artist link-decorate">Zedd, Hayley Williams, Touliver</a>
+                                        <a href="#" class="top-ten-demo-label link-decorate">SpaceSpeakers</a>
+                                        <hr>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerPage">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="hot-event">
+                                <img src="./img/hot-img/kygo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="magazine">
+                                <p class="magazine-title">
+                                    Magazine
+                                </p>
+                                <a href="#" class="magazine-link">Customer Service</a>
+                                <a href="#" class="magazine-link">Subscribe</a>
+                                <a href="#" class="magazine-link">Buy this issue</a>
+                                <p class="magazine-title">
+                                    Beatport Biz
+                                </p>
+                                <p class="footer-info">
+                                    The online extension of Beatport Magazine, beatport.biz is the essential online destination for the music business.
+                                </p>
+                                <a href="#" class="magazine-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="sharing">
+                                <p class="sharing-title">Sharing Beatport</p>
+                                <a href="#">
+                                    <img src="./img/share/fb.png" alt="">
+                                    <span>Fabebook</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/twitter.png" alt="">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/google.png" alt="">
+                                    <span>Google+</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/instagram.png" alt="">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./img/share/youtube.png" alt="">
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="explore-beatport">
+                                <p class="explore-beatport-title">Explore Beatport</p>
+                                <a href="#">Shop</a>
+                                <a href="#">News Archive</a>
+                                <a href="#">Photos Archive</a>
+                                <a href="#">Videos Archive</a>
+                                <a href="#">Magazine Archive</a>
+                                <a href="#">Charts Archive</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="info-beatport">
+                                <p class="info-beatport-title">Information</p>
+                                <a href="#">Mobile</a>
+                                <a href="#">Chart Licensing</a>
+                                <a href="#">Billboard Events</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Sitemap</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Feedback</a>
+                                <a href="#">Lyrics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="col-sm-12">
+                        <p>© 2016 Billboard. All Rights Reserved.</p>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">About Our Ads</a>
+                        <a href="#">Advertising</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tag-playmusic">
+        <audio id="myTune" controls>
+            <source src="./music/a.mp3">
+        </audio>
+
+        <div class="playmusic-info">
+            <div class="imgPlayMusic">
+                <img src="./img/hot-remix/bastards.jpg" alt="">
+            </div>
+            <div class="textPlayMusic">
+                <a href="#" class="playmusic-name">Clarity</a>
+                <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
+            </div>
+        </div>
+        <div class="playmusic-time">
+            <label id="playmusic-start"></label>
+            <progress id="playmusic-process" value="0" max="100"></progress>
+            <label id="playmusic-end"></label>
+        </div>
+        <div class="playmusic-button">
+            <button id="playmusic-prev">
+                <i class="glyphicon glyphicon-backward"></i>
+            </button>
+            <button id="playButton">
+                <i class="glyphicon glyphicon-play"></i>
+                <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button id="playmusic-next">
+                <i class="glyphicon glyphicon-forward"></i>
+            </button>
+            <button id="loopButton">
+                <i class="glyphicon glyphicon-repeat"></i>
+            </button>
+            <div id="volume">
+                <button id="volumeButton">
+                    <i class="glyphicon glyphicon-volume-down"></i>
+                    <i class="glyphicon glyphicon-volume-up"></i>
+                    <i class="glyphicon glyphicon-volume-off"></i>
+                </button>
+                <progress id="volumeProBar" value="100" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main-genres.js"></script>
+</body>
+
+</html>
