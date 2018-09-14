@@ -25,7 +25,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'pages/homepage'
+    view: 'pages/index'
   },
   'post /songs/upload': 'SongsController.addSong',
   'get /songs/search/:nameContains': 'SongsController.filterSongs',
